@@ -93,15 +93,17 @@ function App() {
         setForecastdays(getForecastdays())
     },[data])
   return (
-    <>
-    {loading || !currentWeather ? <h1>LOADING...</h1> : 
-      <div>
+
+    loading || !currentWeather ? <h1>LOADING...</h1> : 
+      <div className='app'>
         <TodayWeather currentWeather={currentWeather} tempDataset={tempDataset}/>
-        <ForecastHourDay forecastday={forecastday}/>
-        <ForecastDay forecastdays={forecastdays}/>
+        <div className='forecast-container'>
+          <ForecastHourDay forecastday={forecastday}/>
+          <ForecastDay forecastdays={forecastdays}/>
+        </div>
+        
       </div>
-    }
-    </>    
+       
   )
 }
 

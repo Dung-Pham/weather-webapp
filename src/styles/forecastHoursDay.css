@@ -1,0 +1,29 @@
+.slide-container{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    gap: 10px;
+    /* padding: 10px; */
+    height: 100px;
+    scroll-behavior: smooth;
+}
+    
+.slide-container::-webkit-scrollbar{
+    display: none;
+}
+.slide-container button{
+    /* padding: 2px; */
+    border-radius: 15px;
+    height: 100px;
+    width: 70px;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border: 0cm;
+}
+
+.slide-container img{
+    width: 50px;
+}
+.selected-button{
+  background-color:#C3E2FE !important;
+}
